@@ -6,9 +6,9 @@ I used wmi library to get all running files from device. Then saved into a list 
 <br>
 
 
-|<img src="Images/library.png">|<img src="Images/list.png">|
-|---------|---------|
-| Library | Getting the files to a list |
+|<img src="Images/library.png">|
+|---------|
+| Libraries |
 
 <br>
 
