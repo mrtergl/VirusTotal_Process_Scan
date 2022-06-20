@@ -3,8 +3,6 @@ Scanning all the running .exe files in VirusTotal with Python.
 
 ## Necessary Libraries:
 
-*RUN THIS SCRIPT IN C:/ PATH*
-
 | Library  | Code to install |
 | ------------- | ------------- |
 | hashlib  | ``` pip install hashlib ```  |
