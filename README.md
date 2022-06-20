@@ -22,7 +22,7 @@ First you have to get the real path of the file. Then with the path, we can get 
 After doing it, we can proceed for scanning the hash of the file using VirusTotal API.
 
 ### Saving the results to a file
-After the scannning completed for a file. It writes the result to a file called "vt_results_exe". It writes all the scores that comes from VirusTotal. In terminal you can see which process has scanned.
+After the scannning completed for a file. It writes the result to a file called "vt_results_exe". It writes all the scores that comes from VirusTotal. In terminal you can see which process has scanned.(vt_Resuts_exe files will be stored in the C:/Users/{username})
 
 |<img src="Images/terminal.png">|<img src="Images/results.png">|
 |---------|---------|
