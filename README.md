@@ -24,6 +24,6 @@ After doing it, we can proceed for scanning the hash of the file using VirusTota
 ### Saving the results to a file
 After the scannning completed for a file. It writes the result to a file called "vt_results_exe". It writes all the scores that comes from VirusTotal. In terminal you can see which process has scanned.
 
-|<img src="Image/terminal.png">|<img src="Image/results.png">|
+|<img src="Images/terminal.png">|<img src="Images/results.png">|
 |---------|---------|
 | Terminal | Results |
