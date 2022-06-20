@@ -1,6 +1,18 @@
 # ViruTotal_Hash_Scan
 Scanning all the running .exe files in VirusTotal with Python.
 
+## Necessary Libraries:
+
+*RUN THIS SCRIPT IN C:/ PATH*
+
+| Library  | Code to install |
+| ------------- | ------------- |
+| hashlib  | ``` pip install hashlib ```  |
+| pathlib2  | ``` pip install pathlib2 ```  |
+| WMI  |``` pip install WMI ``` |
+| requests | ```pip install requests ```|
+
+
 ### Getting .exe files
 I used wmi library to get all running files from device. Then saved into a list called "liste".
 <br>
