@@ -5,6 +5,8 @@ import requests
 import json
 import wmi
 from pathlib import Path
+import pandas as pd
+
 
 home = str(Path.home())
 RES=home+"\results_exe"
@@ -59,16 +61,21 @@ for i in range(len(liste)):
                 for value in data.values():
                     vt.write(',{}'.format(value))
                 vt.write("\n")
-            print(liste[i], "DONE")
+            print("[{}/{}] DONE".format(i,len(liste)))
         else:
             with open(home+"/vt_Result_exe.txt",'a') as vt:
                 vt.write("{},Built-in-Service".format(liste[i]))
-            print(liste[i], "DONE")
+                vt.write("\n")
+            print("[{}/{}] DONE".format(i,len(liste)))
     else:
         with open(home+"/vt_Result_exe.txt",'a') as vt:
             vt.write("{},NOT FOUND".format(liste[i]))
-        print(liste[i], "DONE")
+            vt.write("\n")
+        print("[{}/{}] DONE".format(i,len(liste)))
            
    
+df = pd.read_csv("vt_Result_exe.txt", sep=',')
+os.remove("vt_Result_exe.txt") 
+df.to_csv('vt_Result_exe.csv', sep=',', index=False)
     
 print("SCANNING COMPLETED")       
