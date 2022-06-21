@@ -61,17 +61,17 @@ for i in range(len(liste)):
                 for value in data.values():
                     vt.write(',{}'.format(value))
                 vt.write("\n")
-            print("[{}/{}] DONE".format(i,len(liste)))
+            print("[{}/{}] DONE".format(i+1,len(liste)))
         else:
             with open(home+"/vt_Result_exe.txt",'a') as vt:
                 vt.write("{},Built-in-Service".format(liste[i]))
                 vt.write("\n")
-            print("[{}/{}] DONE".format(i,len(liste)))
+            print("[{}/{}] DONE".format(i+1,len(liste)))
     else:
         with open(home+"/vt_Result_exe.txt",'a') as vt:
             vt.write("{},NOT FOUND".format(liste[i]))
             vt.write("\n")
-        print("[{}/{}] DONE".format(i,len(liste)))
+        print("[{}/{}] DONE".format(i+1,len(liste)))
            
    
 df = pd.read_csv("vt_Result_exe.txt", sep=',')
