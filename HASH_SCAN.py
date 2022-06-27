@@ -76,6 +76,6 @@ for i in range(len(liste)):
    
 df = pd.read_csv("vt_Result_exe.txt", sep=',')
 os.remove("vt_Result_exe.txt") 
-df.to_csv('vt_Result_exe.csv', sep=',', index=False)
+df.to_csv('vt_Result_exe.xlsx', index=False)
     
 print("SCANNING COMPLETED")       
