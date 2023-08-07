@@ -28,7 +28,7 @@ headers = {
 
     "Accept": "application/json",
 
-    "x-apikey": "0f901f14014fb58f6ea58e0ea143366e519c015182329999c89eda8066eb855c"
+    "x-apikey": "YOUR API KEY"
 
 }
 
